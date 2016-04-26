@@ -7,7 +7,7 @@ set(CMAKE_BUILD_TYPE Debug)
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
-find_package(catkin REQUIRED graspit actionlib roscpp roslib )
+find_package(catkin REQUIRED graspit graspit_msgs actionlib roscpp roslib )
 
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
@@ -81,7 +81,7 @@ find_package(Qt4 COMPONENTS QtCore QtGui QtOpenGL Qt3Support REQUIRED)
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES test
-#  CATKIN_DEPENDS
+  CATKIN_DEPENDS graspit_msgs
 #  DEPENDS system_lib
 )
 

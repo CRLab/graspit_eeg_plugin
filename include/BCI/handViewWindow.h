@@ -26,7 +26,6 @@
 #include "ivmgr.h"
 #include "robot.h"
 #include "joint.h"
-#include "humanHand.h"
 #include "body.h"
 #include "contact.h"
 #include "grasp.h"
@@ -34,7 +33,7 @@
 #include "mainWindow.h"
 #include "matvec3D.h"
 #include "graspitGUI.h"
-#include "humanHand.h"
+#include "robots/humanHand.h"
 #include "body.h"
 
 #include "BCI/handView.h"

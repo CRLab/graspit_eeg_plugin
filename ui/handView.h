@@ -83,7 +83,6 @@
 #include "include/SoComplexShape.h"
 #include "include/robot.h"
 #include "include/joint.h"
-#include "include/humanHand.h"
 #include "include/body.h"
 #include "include/contact.h"
 #include "include/grasp.h"
@@ -91,7 +90,7 @@
 #include "ui/mainWindow.h"
 #include "include/matvec3D.h"
 #include "include/graspitGUI.h"
-#include "include/humanHand.h"
+#include "include/robots/humanHand.h"
 #include "include/body.h"
 #include "include/EGPlanner/searchState.h"
 
@@ -111,7 +110,7 @@ class HandView
 private:
 
   QFrame * parentWindow;
-  
+
   //! A pointer to the viewer for this window
   SoQtRenderArea *handViewSoQtRenderArea;
 
@@ -149,7 +148,7 @@ private:
 public:
 
   HandView(SoQtExaminerViewer *mainViewer, Hand * h, QFrame &parentWindow, QString viewName);
-   
+
   void update(const GraspPlanningState & s, Hand & cloneHand);
 
   void updateGeom(Hand & h);
@@ -161,8 +160,8 @@ public:
 
   //---------------Destructor----------------------------
   ~HandView();
-  
+
 };
-  
+
 
 #endif
